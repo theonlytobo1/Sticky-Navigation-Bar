@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sticky Navigation Bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/Logo.png" class="logo">
+            <ul id="menu">
+              <li>HOME</li>
+              <li>ABOUT</li>
+              <li>SERVICES</li>
+              <li>PRODUCT</li>
+              <li>CONTACT</li> 
+            </ul>
+        </nav>
+    </div>  
+    <p class="text">Abuja is the capital and eighth most populous city of Nigeria. Located in the centre of the country within the Federal Capital Territory (FCT), it is a planned city built in the 1980s based on a master plan by Japanese architect Kenzo Tange It replaced Lagos, the country's most populous city, as the capital on 12 December 1991
+        Abuja's geography is defined by Aso Rock, a 400-metre (1,300 ft) monolith left by water erosion. The Presidential Complex, National Assembly Supreme Court and much of the city extend to the south of the rock. Zuma Rock, a 792-metre (2,598 ft) monolith, lies just north of the city on the expressway to Kaduna
+        At the 2006 census, the city of Abuja had a population of 776,298 making it one of the ten most populous cities in Nigeria (placing eighth as of 2006). According to the United Nations, Abuja grew by 139.7% between 2000 and 2010, making it the fastest growing city in the world. As of 2015, the city is experiencing an annual growth of at least 35%, retaining its position as the fastest-growing city on the African continent and one of the fastest-growing in the world. As of 2016, the metropolitan area of Abuja is estimated at six million persons, placing it behind only Lagos as the most populous metro area in Nigeria
+        Major religious sites include the Nigerian National Mosque and the Nigerian National Christian Centre. The city is served by the Nnamdi Azikiwe International Airport. Abuja is known for being one of the few purpose-built capital cities in Africa, as well as being one of the wealthiest
+        Abuja is Nigeria's administrative and political capital. It is also a key capital on the African continent due to Nigeria's geo-political influence in regional affairs. Abuja is also a conference centre and hosts various meetings annually, such as the 2003 Commonwealth Heads of Government meeting and the 2014 World Economic Forum (Africa) meetings.</p>  
+    <p class="text">
+        "Abuja" was in the earlier 20th century the name of the nearby town now called Suleja
+        The indigenous inhabitants of Abuja are the Gbagyi (Gwari), with the Gbagyi language formerly the major of the region language, and others in the area being Bassa, Gwandara, Gade, Dibo, Nupe and Koro. In light of the ethnic and religious divisions of Nigeria, plans had been devised since Nigeria's independence to have its capital in a place deemed neutral to all major ethnic parties, and also in close proximity to all the regions of Nigeria. The location was eventually designated in the centre of the country in the early 1970s as it signified neutrality and national unity. Another impetus for Abuja came because of Lagos population boom that made that city overcrowded and conditions squalid. As Lagos was already undergoing rapid economic development, the Nigerian regime felt the need to expand the economy towards the inner part of the country, and hence decided to move its capital to Abuja. The logic used was similar to the way Brazil planned its capital, Brasília.</p> 
+    <p class="text">
+        The Federal Military Government of Nigeria, promulgated decree No. 6 on the 4th of February, 1976, which initiated the removal of the Federal Capital from Lagos to Abuja. The initial work for Abuja's planning and implementation were carried out by the Military Government of General's Murtala Mohammed and Olusegun Obasanjo and carried over into the Administration of Shehu Shagari. Construction started in the late 1970s but, due to economic and political instability, the initial stages of the city were not complete until the late 1980s.</p>
+    <p class="text">
+        The move of Nigeria's Capital to Abuja was controversial, and the biggest opposition to it was led by Obafemi Awolowo. Awolowo, as a politician and a representative of the Yoruba people, defended their claims against the move of the Capital from Lagos. During the hotly-contested campaign for presidency, he vowed to hire the American Walt Disney Corporation to convert the new site (Abuja) into an amusement park if he was elected. However, after his election as president, Alhaji Shehu Shagari laid the first foundation for Abuja's infrastructure and pushed for its early completion. His first journey outside of Lagos after his election was to Abuja, where he visited contractors and workers on site to urge a speedy completion of the project. On his return, he confided in Alhaji Abubakar Koko his disappointment with the slow progress of work. Shehu Shagari rescheduled the planned relocation to Abuja from 1986 to 1982 which later proved difficult.</p>   
+
+<script>
+    var navbar = document.getElementById("navbar");
+    var menu = document.getElementById("menu");
+
+    window.onscroll = function(){
+        if(window.pageYOffset >= menu.offsetTop){
+           navbar.classList.add("sticky"); 
+        }
+        else{
+            navbar.classList.remove("sticky"); 
+        }
+    } 
+</script>
+
+
+</body>
+</html>
